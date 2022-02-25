@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+                    background : #1b1716;
+                    color: #f3f7fb;
+                }
+                QPushButton {
+                    background : #1f5d2f;
+                    border-radius: 3px; 
+                }
+                QListWidget{
+                    background : #25252a;
+                    font-size: 13px;
+                }
+                QSlider{
+                    color : #1f5d2f;
+                }
+                QSlider::groove:horizontal {  
+                    height: 10px;
+                    margin: 0px;
+                    border-radius: 5px;
+                    background: #B0AEB1;
+                }
+                QSlider::handle:horizontal {
+                    background: #fff;
+                    border: 1px solid #E3DEE2;
+                    width: 17px;
+                    margin: -5px 0; 
+                    border-radius: 8px;
+                }
+                QSlider::sub-page:qlineargradient {
+                    background: #3B99FC;
+                    border-radius: 5px;
+                }</string>
+  </property>
+  <widget class="QListWidget" name="lw">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>280</width>
+     <height>300</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb1">
+   <property name="geometry">
+    <rect>
+     <x>289</x>
+     <y>160</y>
+     <width>41</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>00:00</string>
+   </property>
+  </widget>
+  <widget class="QSlider" name="qsl">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>170</y>
+     <width>370</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_play">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>210</y>
+     <width>75</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Play ►</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_preview">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>210</y>
+     <width>75</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>⏪</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_next">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>210</y>
+     <width>75</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="text">
+    <string>⏩</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb2">
+   <property name="geometry">
+    <rect>
+     <x>709</x>
+     <y>160</y>
+     <width>41</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>00:00</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>260</y>
+     <width>451</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="btn_openmusic">
+      <property name="text">
+       <string>Выбрать папку с музыкой</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="cmb"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="pixlbl">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>0</y>
+     <width>470</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
